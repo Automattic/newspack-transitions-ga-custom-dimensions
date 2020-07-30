@@ -144,8 +144,8 @@ class Plugin {
 		$teams = [];
 
 		$args  = array(
-			'numberposts' => -1,
-			'post_type'   => 'wc_memberships_team',
+			'posts_per_page' => -1,
+			'post_type'      => 'wc_memberships_team',
 		);
 		$query = new \WP_Query( $args );
 		if ( ! $query->have_posts() ) {
